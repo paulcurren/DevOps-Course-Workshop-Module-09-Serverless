@@ -1,3 +1,4 @@
 image:
   file: .devcontainer/Dockerfile
-  context: .
+vscode.extensions:
+  - ms-python.python
