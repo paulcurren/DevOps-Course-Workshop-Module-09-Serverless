@@ -1,7 +1,10 @@
 FROM python:3.9-buster
 
-# Install git and Azure CLI
-RUN apt-get update && apt-get install -y azure-cli git
+# Install git
+RUN apt-get update && apt-get install -y git
+
+# Install Azure CLI
+RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 
 # Install Azure function tools
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
