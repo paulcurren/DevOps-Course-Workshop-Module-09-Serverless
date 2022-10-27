@@ -16,6 +16,14 @@
       "partitionKey": "message",
       "connection": "AzureWebJobsStorage",
       "direction": "in"
+    },
+    {
+      "name": "messageOut",
+      "type": "table",
+      "tableName": "AcmeTranslated",
+      "partitionKey": "message",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
     }
   ]
 }

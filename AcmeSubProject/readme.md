@@ -15,6 +15,7 @@ func azure functionapp publish PdcAcmeApp1
 
 
 az storage table create --name AcmeTranslations --account-name storagepdc1
+az storage table create --name AcmeTranslated --account-name storagepdc1
 
 func azure functionapp fetch-app-settings PdcAcmeApp1
 
